@@ -1,3 +1,41 @@
 * {
     box-sizing: border-box;
   }
+
+.main-nav {
+  background-color: #343A40;
+  color: #FFFFFF;
+  font-weight: bold;
+  display: flex;
+  padding-left: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  border-radius: 1px;
+  border-style: solid;
+  padding: 10px;
+}
+
+.blog-post-info h3{
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.blog-post-info h4{
+  margin: 0px;
+}
+
+q {
+  font-style: italic;
+}
