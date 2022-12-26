@@ -1,3 +1,4 @@
+/* Main CSS */
 * {
     box-sizing: border-box;
   }
@@ -21,10 +22,17 @@ body {
   margin: 0 auto;
 }
 
+/* Other CSS */
+q {
+  font-style: italic;
+}
+
+/* About Me CSS */
 .blog-post {
   border-radius: 1px;
   border-style: solid;
   padding: 10px;
+  margin-bottom: 5px;
 }
 
 .blog-post-info h3{
@@ -36,6 +44,7 @@ body {
   margin: 0px;
 }
 
-q {
-  font-style: italic;
+.blog-image {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
