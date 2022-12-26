@@ -28,6 +28,16 @@ q {
 }
 
 /* About Me CSS */
+@media only screen and (max-width: 600px) {
+  /* Centers and makes the photo 50% of the page if the device is 600px wide or less */
+  .img-mobile-center {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
 .blog-post {
   border-radius: 1px;
   border-style: solid;
@@ -47,4 +57,41 @@ q {
 .blog-image {
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Centers and makes the photo 50% of the page if the device is 600px wide or less */
+  .blog-image {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* Leveling Up & Learning */
+.learning {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 10px;
+  grid-template-columns: 1fr 4fr;
+}
+
+@media only screen and (max-width: 600px) {
+  .learning {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.learning-photo>img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.learning-description {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
