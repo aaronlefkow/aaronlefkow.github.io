@@ -13,8 +13,9 @@ function addNewDoggo() {
     const img = document.createElement("img");
     img.src = dogObject.message;
     img.alt = "Cute doggo";
-    img.style.maxWidth = "100vw";
-    img.style.height = "auto";
+    img.style.objectFit = "contain";
+    img.style.width = "100vw";
+    img.style.height = "100vh";
 
     const oldImg = doggos.querySelector("img");
     if (oldImg) {
