@@ -1,5 +1,4 @@
 const DOG_URL = "https://dog.ceo/api/breeds/image/random";
-
 const doggos = document.getElementById("dog-target");
 
 function addNewDoggo() {
@@ -14,7 +13,14 @@ function addNewDoggo() {
     const img = document.createElement("img");
     img.src = dogObject.message;
     img.alt = "Cute doggo";
+    
+    const oldImg = doggos.querySelector("img");
+    if (oldImg) {
+      doggos.removeChild(oldImg);
+    }
+    
     doggos.appendChild(img);
+    
   });
 }
 
